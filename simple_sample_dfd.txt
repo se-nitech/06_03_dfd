@@ -1,0 +1,9 @@
+process	order 受注
+process	invoice 請求
+process	arrangement 手配
+entity	customer 客
+customer --> order 注文情報
+order --> arrangement 発注データ
+arrangement --> customer 出荷
+arrangement --> invoice 請求情報
+invoice --> customer 請求書
