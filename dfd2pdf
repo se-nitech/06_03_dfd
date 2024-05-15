@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DFD_FILE="$1"
+data-flow-diagram ${DFD_FILE}
+inkscape ${DFD_FILE%.*}.svg -o ${DFD_FILE%.*}.png
