@@ -17,6 +17,12 @@ docker compose exec mypython inkscape simple_sample_dfd.svg -o simple_sample_dfd
 docker compose exec mypython inkscape simple_sample_dfd.svg -o simple_sample_dfd.pdf
 ```
 
+もしくは
+
+```bash
+docker compose exec mypython dfd2pdf simple_sample_dfd.txt
+```
+
 終了
 
 ```bash
